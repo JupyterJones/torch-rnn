@@ -61,13 +61,15 @@ on UBUNTU 16.04 This did not make a usable hdf5-0-0.rockspec
 git clone https://github.com/deepmind/torch-hdf5
 cd torch-hdf5
 luarocks make hdf5-0-0.rockspec
-```
-This one worked fine 
+-------------------
+This one worked fine:
+Tue May 22 19:28:57 +08 2018
+
 git clone https://github.com/anibali/torch-hdf5.git
 cd torch-hdf5
 git checkout hdf5-1.10 
 luarocks make hdf5-0-0.rockspec
-
+```
 
 
 
