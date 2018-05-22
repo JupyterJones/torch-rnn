@@ -55,11 +55,22 @@ luarocks install nn
 luarocks install optim
 luarocks install lua-cjson
 
+NOTE:
+on UBUNTU 16.04 This did not make a usable hdf5-0-0.rockspec
 # We need to install torch-hdf5 from GitHub
 git clone https://github.com/deepmind/torch-hdf5
 cd torch-hdf5
 luarocks make hdf5-0-0.rockspec
 ```
+This one worked fine 
+git clone https://github.com/anibali/torch-hdf5.git
+cd torch-hdf5
+git checkout hdf5-1.10 
+luarocks make hdf5-0-0.rockspec
+
+
+
+
 
 ### CUDA support (Optional)
 To enable GPU acceleration with CUDA, you'll need to install CUDA 6.5 or higher and the following Lua packages:
